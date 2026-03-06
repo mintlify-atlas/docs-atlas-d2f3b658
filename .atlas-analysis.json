@@ -1,0 +1,136 @@
+{
+  "projectType": "saas",
+  "projectName": "BirdIA",
+  "projectDescription": "AI-powered bird species identification platform using audio analysis with geolocation tracking and comprehensive bird catalog.",
+  "theme": "almond",
+  "primaryColor": "#f1d262",
+  "lightColor": "#7c6c34",
+  "darkColor": "#19160b",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "requirements"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/audio-analyzer",
+              "features/bird-catalog",
+              "features/maps-sightings",
+              "features/history-analytics"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              "guides/recording-best-practices",
+              "guides/understanding-results",
+              "guides/user-roles",
+              "guides/geolocation"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment-setup",
+              "configuration/api-configuration",
+              "configuration/deployment"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Components",
+        "groups": [
+          {
+            "group": "Core Components",
+            "pages": [
+              "components/analizador-audio",
+              "components/mapa-predicciones",
+              "components/catalogo-aves",
+              "components/modal-resultados"
+            ]
+          },
+          {
+            "group": "Navigation",
+            "pages": [
+              "components/sidebar",
+              "components/navbar"
+            ]
+          },
+          {
+            "group": "Utilities",
+            "pages": [
+              "components/axios-client",
+              "components/protected-route"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/auth/login",
+              "api/auth/me"
+            ]
+          },
+          {
+            "group": "Inference",
+            "pages": [
+              "api/inference/process",
+              "api/inference/history",
+              "api/inference/species-confirmation"
+            ]
+          },
+          {
+            "group": "Bird Catalog",
+            "pages": [
+              "api/catalog/list-birds"
+            ]
+          },
+          {
+            "group": "Admin",
+            "pages": [
+              "api/admin/logs",
+              "api/admin/user-management"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI-powered bird species identification from audio recordings",
+    "Real-time audio recording with high-quality capture settings",
+    "Interactive map visualization of bird sightings with geolocation",
+    "Comprehensive bird catalog with images and audio samples",
+    "User history and analytics dashboard",
+    "Role-based access control (admin and researcher roles)",
+    "PWA support for mobile and offline capabilities",
+    "Species confirmation and correction by users"
+  ],
+  "publicApiSurface": [
+    "POST /v1/auth/login - User authentication",
+    "GET /v1/usuarios/me - Get current user information",
+    "POST /v1/inferencia/procesar_inferencia - Process audio for bird identification",
+    "GET /v1/inferencia/historial - Get user's inference history",
+    "GET /v1/inferencia/listar_aves - List all bird species in catalog",
+    "POST /v1/inferencia/especie_usuario - Confirm or correct species identification",
+    "GET /v1/admin/logs/historial - Get all inference logs (admin only)",
+    "AnalizadorAudio component - Audio recording and upload interface",
+    "MapaPredicciones component - Interactive map with bird sighting markers",
+    "CatalogoAves component - Searchable bird species catalog",
+    "ModalResultados component - Display identification results"
+  ]
+}
